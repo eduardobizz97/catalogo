@@ -21,7 +21,8 @@ class Conexion{
     }
 
     public function prepare($sql){
-        $this->connect->query($sql);
+        return $this->connect->query($sql);
+        
     }
 }
 
